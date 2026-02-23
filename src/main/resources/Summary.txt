@@ -1,0 +1,62 @@
+
+Project Title: Beads Store JavaFX Application
+
+Project Description:
+  This project is a JavaFX-based application that simulates a customizable online jewelry store,
+  where users can design and order bead jewelry items such as necklaces, bracelets, and rings.
+  The application is built using object-oriented principles and incorporates five GUI windows to walk the user through the entire process—from entering personal details to viewing a final order receipt.
+
+How All Required Elements Were Incorporated:
+
+1. Classes & Inheritance:
+   - JewelryItem is the main class used to represent bead jewelry items.
+   - Shared and unique attributes are handled using class design and object creation.
+
+2. Composition:
+   - The application uses composition by combining different GUI components (TextFields, ComboBoxes, etc.) into each window layout.
+   - A JewelryItem object includes multiple properties like shape, color, type, and size.
+
+3. Interfaces:
+   - Methods are used consistently in a modular way (like addCart, showAlert) to simulate reusable behavior, even if a formal interface wasn't declared.
+
+4. GUI with Multiple Windows (JavaFX):
+   - Window 1: Customer Info
+   - Window 2: Jewelry Customization (color, shape, type, size)
+   - Window 3: Address Entry
+   - Window 4: Cart Summary
+   - Window 5: Order Confirmation & Receipt
+
+5. Error Handling:
+   - Input validation is performed at each step.
+   - Users receive alert messages if required fields are left blank or selections are invalid.
+
+6. Data Validation:
+   - Checks if the cart is empty before proceeding.
+   - Validates number-only input for size.
+   - Ensures all fields are completed before placing an order.
+
+7. Hash Maps:
+   - A nested HashMap<String, Map<String, List<String>>> is used to control how bead types are loaded based on the selected shape and color.
+
+8. Alert Messages:
+   - JavaFX Alert dialogs are used for validation and to guide the user when an error is made (e.g., missing name, empty cart).
+
+9. File Handling:
+   - The receipt can be saved to a text file using BufferedWriter, including all customer and order details.
+
+10. String Formatting:
+   - String.format() is used to present a clean layout of items in the cart and in the receipt file.
+
+New Things I Learned:
+- How to use HashMaps to organize and access nested data.
+- How to show JavaFX Alert messages to validate user input(show Alert).
+- How to use file handling in Java to write data to a text file.
+- How to use String.format to make text output neat and readable.
+
+Challenges Faced:
+- Managing data across multiple JavaFX windows.
+- Ensuring validation works correctly at every step.
+- Keeping the user interface simple while handling complex options like shape, color, and type in the hash map.
+- Debugging layout spacing and input field issues.
+
+
